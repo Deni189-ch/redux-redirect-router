@@ -1,0 +1,10 @@
+@import "../../../data/styles/mixin.scss";
+.main {
+  background: $ColorWhite !important;
+  font-size: 18px;
+}
+
+.main__card {
+  float: left;
+  margin: 6px 20px 20px 0px !important;
+}

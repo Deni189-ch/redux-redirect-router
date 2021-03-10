@@ -1,0 +1,12 @@
+@import "../../../data/styles/mixin.scss";
+
+.login__form {
+  border-radius: 10px;
+  background: $ColorWhite;
+  padding: 50px;
+  box-shadow: 0 0 5px;
+}
+
+.login__input {
+  width: 300px;
+}

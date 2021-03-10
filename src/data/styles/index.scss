@@ -1,0 +1,21 @@
+@import "./mixin.scss";
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  margin: 0 auto;
+  font-family: sans-serif;
+  max-width: 1135px;
+}
+
+.content {
+  margin: 0px 50px 50px;
+  min-height: 90vw;
+  background: gainsboro;
+  border-radius: 10px;
+  padding: 20px;
+}
