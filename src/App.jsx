@@ -19,6 +19,8 @@ function App() {
   return (
     <div className="App content">
       <Navbar isAuth={isAuth} />
+
+
       <Switch>
         <Route path="/main" render={() => <Main />} />
         <Route path="/news" render={() => <News 

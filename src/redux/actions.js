@@ -47,32 +47,3 @@ export const getDatas = () => async (dispatch) => {
 
 
 
-
-
-
-
-
-// export function hideIsDisabled(value) {
-//   return (dispatch) => {
-//     dispatch({ type: IS_DISABLED, value });
-//   };
-// }
-
-
-// export const getDatas = (size) => async (dispatch) => {
-//   dispatch(showIsDisabled(true))  
-//   try {
-//     const response = await datasAPI.getDatas(size)
-//      if (response.status === 200) {
-//        const data = response.data
-//         dispatch({type: SHOW_DATA, data })
-//         dispatch(hideIsDisabled(false))
-//      }
-//   } catch (error) {
-//       alert('Ошибка при отправки запроса, повторите попытку позже.')
-//       dispatch(hideIsDisabled(false))
-//   } 
-// };
-
-
-

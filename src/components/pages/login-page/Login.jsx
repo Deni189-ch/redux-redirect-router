@@ -1,26 +1,17 @@
 import React from "react";
 import { Redirect } from "react-router-dom";
-
 import { layout, tailLayout } from "./data";
 
 import { Alert, Form, Input, Button } from "antd";
 import "./style.scss";
 
-export const Login = ({
-  isAuth,
-  dispatch,
-  setDataIsAuth,
-  isError,
-}) => {
-  if (isAuth) {
-    return <Redirect to={"/main"} />;
-  }
+
+export const Login = ({ isAuth, dispatch, setDataIsAuth, isError,}) => {
+
+  if (isAuth)  return <Redirect to={"/main"} />;
 
   const onFinish = (value) => {
-    if (value.username.trim() && value.password.trim()) {
-      dispatch(setDataIsAuth(value));
-    } else {
-    }
+    (value.username.trim() && value.password.trim()) && dispatch(setDataIsAuth(value));
   };
 
   return (

@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-
 import "./style.scss";
 
 export const News = ({ getDatas, dispatch, newsData }) => {
